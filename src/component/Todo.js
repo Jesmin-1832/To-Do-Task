@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function Todo() {
     var [data, setData] = useState([]);
     var [active, setActive] = useState("All");
-
+ 
     useEffect(() => {
         var setlocal = JSON.parse(localStorage.getItem('Task'));
         if (setlocal == null) {
